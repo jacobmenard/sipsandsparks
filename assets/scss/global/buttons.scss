@@ -45,4 +45,18 @@
         }
 
     }
+
+    &.mf-button {
+        height: 104px;
+        width: 100%;
+        max-width: 500px;
+
+        @include mobile-lg {
+            width: 203px;
+            height: 56px;
+            padding: 0 11px;
+
+            font-size: 16px !important;
+        }
+    }
 }

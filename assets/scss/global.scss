@@ -23,12 +23,17 @@ $borderRadiusList: (0, 5, 10, 20, 30);
 $borderList: (1, 2, 3);
 @each $border in $borderList {
     .border-red-#{$border} { border: #{$border}px solid $red1 !important; }
+
     .border-black-#{$border} { border: #{$border}px solid $black2 !important; }
+
+    .border-black1-#{$border} { border: #{$border}px solid $black4 !important; }
+    .border-bottom-black1-#{$border} { border-bottom: #{$border}px solid $black4 !important; }
+    
     .border-white1-#{$border} { border: #{$border}px solid $white1 !important; }
     
 }
 
-$gapList: (5, 10, 13, 16, 20, 22, 25, 30, 32, 48, 50, 55, 60, 100, 115, 130, 177, 230);
+$gapList: (5, 10, 11, 13, 16, 18, 20, 22, 25, 30, 32, 40, 48, 50, 55, 60, 100, 115, 130, 177, 230);
 @each $gap in $gapList {
     .gap-#{$gap} { gap: #{$gap}px !important; }
 }
@@ -49,12 +54,12 @@ $fontweightList: (100, 200, 300, 400, 500, 600, 700, 800, 900);
     }
 }
 
-$maxWidthList: (50, 100, 350, 1020, 1100);
+$maxWidthList: (50, 100, 250, 350, 1020, 1100);
 @each $mw in $maxWidthList {
     .max-width-#{$mw} { max-width: #{$mw}px !important; }
 }
 
-$sizeList: (0, 5, 8, 10, 20, 25, 27, 25, 30, 40, 45, 50);
+$sizeList: (0, 5, 8, 10, 20, 25, 27, 25, 30, 40, 45, 50, 60);
 @each $size in $sizeList {
     .margin-bottom-#{$size} { margin-bottom: #{$size}px !important; }
     .margin-top-#{$size} { margin-top: #{$size}px !important; }

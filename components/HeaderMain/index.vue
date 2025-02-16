@@ -44,6 +44,9 @@
                 <template #button-content>
                     <img src="~assets/images/hamburger.svg" alt="">
                 </template>
+                <nuxt-link to="/" class="list fw-bold text-decoration-none text-nowrap">
+                    <div class="item p-y-5 p-x-25">HOME</div>
+                </nuxt-link>
                 <nuxt-link to="/about-us" class="list fw-bold text-decoration-none text-nowrap">
                     <div class="item p-y-5 p-x-25">ABOUT US</div>
                 </nuxt-link>
@@ -54,6 +57,9 @@
                     <div class="item p-y-5 p-x-25">SUCCESS STORIES</div>
                 </nuxt-link>
                 <nuxt-link to="/contact-us" class="list fw-bold text-decoration-none text-nowrap">
+                    <div class="item p-y-5 p-x-25">CONTACT US</div>
+                </nuxt-link>
+                <nuxt-link to="/match-form" class="list fw-bold text-decoration-none text-nowrap">
                     <div class="item p-y-5 p-x-25">MATCH FORM</div>
                 </nuxt-link>
             </b-dropdown>

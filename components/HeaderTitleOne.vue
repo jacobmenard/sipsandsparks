@@ -11,9 +11,7 @@
 
         <div>
             <p class="sub-header">
-                <slot name="sub-header">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                </slot>
+                <slot name="sub-header"></slot>
             </p>
         </div>
     </div>
@@ -37,6 +35,22 @@
         }
     }
 
+    &.match-form {
+        .header {
+            @include mobile-lg {
+                font-size: 36px !important;
+                line-height: 36px !important;
+            }
+        }
+
+        .symbol {
+            @include mobile-lg {
+                font-size: 36px !important;
+                line-height: 36px !important;
+            }
+        }
+    }
+
     .sub-header {
         @include font-custom(22px, 30.8px, 400, $red1) {
             margin-bottom: 0;
@@ -47,6 +61,19 @@
             line-height: 22.4px !important;
         }
     }
+    .symbol {
+            @include font-custom(68px, 71.4px, 700, $red) {
+                font-family: 'Montserrat', sans-serif !important;
+                
+                letter-spacing: -0.05em;
+            }
+
+            @include mobile-lg {
+                
+                font-size: 48px !important;
+                line-height: 50.4px !important;
+            }
+        }
 }
 
 </style>
