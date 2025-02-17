@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
+const router = useRouter()
+
 const screenNumber = ref(1)
 const selectionType = ref([
     { value: 1, text: 'friend' },
@@ -20,6 +22,10 @@ function changeScreenNumber() {
     } else {
         screenNumber.value = 1
     }
+}
+
+function goToFeedback() {
+    router.push({ path: '/feedback/1' })
 }
 
 </script>
@@ -90,7 +96,12 @@ function changeScreenNumber() {
                 </b-form-group>
             </div>
 
-            <b-button variant="ss-default-button" class="mf-button" @click="changeScreenNumber()">{{ screenNumber == 1 ? 'CONTINUE' : 'BACK' }}</b-button>
+            <div class="d-flex flex-column gap-10">
+                <b-button v-if="screenNumber == 2" variant="ss-default-button" class="mf-button" @click="goToFeedback()">CONTINUE</b-button>
+
+                <b-button variant="ss-default-button" class="mf-button" @click="changeScreenNumber()">{{ screenNumber == 1 ? 'CONTINUE' : 'BACK' }}</b-button>
+            </div>
+
         </div>
 
     </div>
